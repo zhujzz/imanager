@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User list</title>
+</head>
+<body>
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>用户名</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for line in user_list %}
+                    <tr>
+                        <td>{{ line.name }}</td>
+                        <td>{{ line.email }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+    </div>
+
+</body>
+</html>
