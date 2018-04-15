@@ -20,5 +20,4 @@ def list_users(request):
 @csrf_exempt
 def login_success(request):
     user_list = User.objects.all()
-
     return HttpResponse(render(request, 'users/loginSucess.html', {'user_list': user_list}))
